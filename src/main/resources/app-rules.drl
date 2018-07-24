@@ -1,0 +1,164 @@
+import DataEntryRules.Message;
+
+/*
+	Rules for this data:
+	POINTS = 100 to start
+	
+	+5  for each filled in 
+	     fname           
+	     lname           
+	     city           
+	     state           
+	     zip 
+	     
+	+3  for state == AZ
+	+5  for city == LOS ANGELES | SAN DIEGO | SAN FRANCISCO 
+	-25 for zip == 99999
+	+5  for vehicle_make == BMW | MASERATI
+	+1                   == FORD | DODGE | TOYOTA           
+    +2  for model_year >= 2010
+    -6                 < 2000
+    +5  for annual_miles < 10000
+    -3                  > 25000
+    +5  for use == PLEASURE
+    -1          == WORK           
+    +7  for fav_food == CHILI DOG | FRIES       
+    +8  for fav_movie == STAR WARS | MINIONS     
+    +10 for fav_sport == CURLING | LACROSSE      
+    +10  for fav_team == WARRIORS | LAKERS | CELTICS        
+	
+*/
+
+dialect "mvel"
+rule "Fname Entered Rule"
+    when m: Message ( fname != null )
+    then m.incPoints(5);
+    	 //System.out.println("fname rule");
+end
+
+rule "Lname entered"
+	when m: Message ( lname != null )
+	then m.incPoints(5);
+    	 //System.out.println("lname rule");
+end
+
+rule "City entered"
+	when m: Message ( city != null )
+	then m.incPoints(5);
+    	 //System.out.println("city rule");
+end
+
+rule "State entered"
+	when m: Message( state != null )
+	then m.incPoints(5);
+    	 //System.out.println("state rule");
+end
+
+rule "Zip entered"
+	when m: Message( zip != null )
+	then m.incPoints(5);
+    	 //System.out.println("zip rule");
+end
+
+rule "bad Zip entered"
+	when m: Message( zip == "99999" )
+	then m.incPoints(-25);
+    	 //System.out.println("zip 99999 rule");
+end
+
+rule "AZ Rule"
+    when m: Message ( state == "AZ" )
+    then m.incPoints(3);
+    	 //System.out.println("state AZ rule");
+end
+
+rule "City LAX rule"
+	when m: Message ( city == "LOS ANGELES" )
+	then m.incPoints(6);
+    	 //System.out.println("LAX rule");
+end
+
+rule "City SAN rule"
+	when m: Message ( city == "SAN DIEGO" )
+	then m.incPoints(5);
+    	 //System.out.println("SAN rule");
+end
+
+rule "City SFO rule"
+	when m: Message ( city == "SAN FRANCISCO" )
+	then m.incPoints(4);
+    	 //System.out.println("SFO rule");
+end
+
+rule "Vehicle rule 1"
+	when m: Message ( vehicle_make == "BMW" || vehicle_make == "MASERATI" )
+	then m.incPoints(5);
+    	 //System.out.println("BMW rule");
+end
+
+rule "Vehicle rule 2"
+	when m: Message ( vehicle_make == "FORD" || vehicle_make == "DODGE" || vehicle_make == "TOYOTA")
+	then m.incPoints(1);
+    	 //System.out.println("FORD rule");
+end
+
+rule "Model yr >= 2010"
+	when m: Message ( model_year >= 2010 )
+	then m.incPoints(2);
+    	 //System.out.println("yr >= 2010 rule");
+end
+
+rule "Model yr < 2000"
+	when m: Message ( model_year < 2000 )
+	then m.incPoints(-6);
+    	 //System.out.println("yr < 2000 rule");
+end
+
+rule "Miles < 10000"
+	when m: Message ( annual_miles < 10000 )
+	then m.incPoints(5);
+    	 //System.out.println("miles < 10000 rule");
+end
+
+rule "Miles > 25000"
+	when m: Message ( annual_miles >= 25000 )
+	then m.incPoints(-3);
+    	 //System.out.println("miles > 25000 rule");
+end
+
+rule "Use Pleasure"
+	when m: Message ( use == "PLEASURE" )
+	then m.incPoints(5);
+    	 //System.out.println("Pleasure rule");
+end
+
+rule "Use Work"
+	when m: Message ( use == "WORK" || use == "COMMUTE" )
+	then m.incPoints(-1);
+    	 //System.out.println("Work rule");
+end
+
+rule "Food"
+	when m: Message ( fav_food == "CHILI DOG" || fav_food == "FRIES" )
+	then m.incPoints(7);
+    	 //System.out.println("Chili dog rule");
+end
+
+rule "Movie"
+	when m: Message ( fav_movie == "STAR WARS" || fav_movie == "MINIONS" )
+	then m.incPoints(8);
+    	 //System.out.println("Movie rule");
+end
+
+rule "Sport"
+	when m: Message ( fav_sport == "CURLING" || fav_sport == "LACROSSE" )
+	then m.incPoints(10);
+    	 //System.out.println("Sport rule");
+end
+
+rule "Team"
+	when m: Message ( fav_team == "WARRIORS" || fav_team == "LAKERS" || fav_team == "CELTICS" )
+	then m.incPoints(10);
+    	 //System.out.println("Team rule");
+end
+
