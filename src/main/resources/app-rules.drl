@@ -1,4 +1,4 @@
-import DataEntryRules.Message;
+import com.esgyn.drools.Message;
 
 /*
 	Rules for this data:
