@@ -1,4 +1,5 @@
-Repository Init Content
-=======================
+Esgyn Rules for RHPAM 7.0.1
+===========================
 
-Your project description here.
+This project relies on [esgyn-rhpam-java](https://github.com/lawnjarae/esgyn-rhpam-java) for it's data objects.
+Make sure that project is built first before compiling this one.
