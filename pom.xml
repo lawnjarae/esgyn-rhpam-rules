@@ -47,9 +47,8 @@
     </dependency>
     <dependency>
       <groupId>com.esgyn.drools</groupId>
-      <artifactId>rulestest</artifactId>
+      <artifactId>objects</artifactId>
       <version>0.0.1-SNAPSHOT</version>
-      <scope>compile</scope>
     </dependency>
   </dependencies>
   <repositories>

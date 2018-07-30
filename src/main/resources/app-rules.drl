@@ -1,5 +1,5 @@
-import com.esgyn.drools.Message;
-import com.esgyn.drools.RulesInfoHelper;
+import com.esgyn.drools.objects.Message;
+import com.esgyn.drools.objects.RulesInfoHelper;
 
 /*
 	Rules for this data:
@@ -38,7 +38,6 @@ rule "Fname Entered Rule"
     then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("fname rule");
 end
 
@@ -49,7 +48,6 @@ rule "Lname entered"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("lname rule");
 end
 
@@ -60,7 +58,6 @@ rule "City entered"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("city rule");
 end
 
@@ -71,7 +68,6 @@ rule "State entered"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("state rule");
 end
 
@@ -82,7 +78,6 @@ rule "Zip entered"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("zip rule");
 end
 
@@ -93,7 +88,6 @@ rule "bad Zip entered"
 	then
 		m.incPoints(-25);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("zip 99999 rule");
 end
 
@@ -104,7 +98,6 @@ rule "AZ Rule"
     then
 		m.incPoints(3);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("state AZ rule");
 end
 
@@ -115,7 +108,6 @@ rule "City LAX rule"
 	then
 		m.incPoints(6);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("LAX rule");
 end
 
@@ -126,7 +118,6 @@ rule "City SAN rule"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("SAN rule");
 end
 
@@ -137,7 +128,6 @@ rule "City SFO rule"
 	then
 		m.incPoints(4);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("SFO rule");
 end
 
@@ -148,7 +138,6 @@ rule "Vehicle rule 1"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("BMW rule");
 end
 
@@ -159,7 +148,6 @@ rule "Vehicle rule 2"
 	then
 		m.incPoints(1);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("FORD rule");
 end
 
@@ -170,7 +158,6 @@ rule "Model yr >= 2010"
 	then
 		m.incPoints(2);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("yr >= 2010 rule");
 end
 
@@ -181,7 +168,6 @@ rule "Model yr < 2000"
 	then
 		m.incPoints(-6);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("yr < 2000 rule");
 end
 
@@ -192,7 +178,6 @@ rule "Miles < 10000"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("miles < 10000 rule");
 end
 
@@ -203,7 +188,6 @@ rule "Miles > 25000"
 	then
 		m.incPoints(-3);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("miles > 25000 rule");
 end
 
@@ -214,7 +198,6 @@ rule "Use Pleasure"
 	then
 		m.incPoints(5);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("Pleasure rule");
 end
 
@@ -225,7 +208,6 @@ rule "Use Work"
 	then
 		m.incPoints(-1);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("Work rule");
 end
 
@@ -236,7 +218,6 @@ rule "Food"
 	then
 		m.incPoints(7);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("Chili dog rule");
 end
 
@@ -247,7 +228,6 @@ rule "Movie"
 	then
 		m.incPoints(8);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("Movie rule");
 end
 
@@ -258,7 +238,6 @@ rule "Sport"
 	then
 		m.incPoints(10);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("Sport rule");
 end
 
@@ -269,6 +248,5 @@ rule "Team"
 	then
 		m.incPoints(10);
 		rih.getFiredRules().add(drools.getRule().getName());
-		rih.getFiredTuples().add(drools.getTuple());
     	//System.out.println("Team rule");
 end
