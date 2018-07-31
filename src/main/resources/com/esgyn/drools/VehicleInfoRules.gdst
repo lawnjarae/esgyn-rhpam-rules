@@ -91,7 +91,7 @@
         </condition-column52>
         <condition-column52>
           <typedDefaultValue>
-            <valueString>10000</valueString>
+            <valueString></valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
@@ -108,7 +108,7 @@
         </condition-column52>
         <condition-column52>
           <typedDefaultValue>
-            <valueString>10000</valueString>
+            <valueString></valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
@@ -120,6 +120,22 @@
           <fieldType>Integer</fieldType>
           <operator>&lt;</operator>
           <valueList>5000, 10000, 15000, 20000, 25000, 30000, 35000</valueList>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Use</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>use</factField>
+          <fieldType>String</fieldType>
+          <operator>in</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -225,12 +241,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>10000</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>10000</valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
