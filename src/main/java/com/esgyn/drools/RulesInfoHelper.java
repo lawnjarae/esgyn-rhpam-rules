@@ -5,7 +5,7 @@ import java.util.List;
 
 public class RulesInfoHelper {
 
-	List<String> firedRules = new ArrayList<>();
+	List<String> firedRules = new ArrayList<String>();
 
 	public List<String> getFiredRules() {
 		return firedRules;

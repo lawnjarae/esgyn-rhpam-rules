@@ -25,12 +25,6 @@
       <import>
         <type>java.util.ArrayList</type>
       </import>
-      <import>
-        <type>com.esgyn.drools.objects.Message</type>
-      </import>
-      <import>
-        <type>com.esgyn.drools.objects.RulesInfoHelper</type>
-      </import>
     </imports>
   </imports>
   <version>1.0</version>

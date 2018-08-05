@@ -216,10 +216,10 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.esgyn.drools.objects.Message</type>
+        <type>com.esgyn.drools.Message</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.esgyn.drools.objects.RulesInfoHelper</type>
+        <type>com.esgyn.drools.RulesInfoHelper</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>

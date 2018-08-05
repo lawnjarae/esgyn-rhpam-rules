@@ -1,5 +1,5 @@
-import com.esgyn.drools.objects.Message;
-import com.esgyn.drools.objects.RulesInfoHelper;
+import com.esgyn.drools.Message;
+import com.esgyn.drools.RulesInfoHelper;
 
 /*
 	Rules for this data:

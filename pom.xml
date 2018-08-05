@@ -45,11 +45,6 @@
       <version>7.7.0.Final-redhat-8</version>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>com.esgyn.drools</groupId>
-      <artifactId>objects</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
   </dependencies>
   <repositories>
     <repository>
