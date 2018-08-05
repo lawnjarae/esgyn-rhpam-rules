@@ -57,6 +57,54 @@
           <parameters/>
           <binding></binding>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Fav Movie</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>fav_movie</factField>
+          <fieldType>String</fieldType>
+          <operator>not in</operator>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Fav Sport</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>fav_sport</factField>
+          <fieldType>String</fieldType>
+          <operator>in</operator>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Fav Team</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>fav_team</factField>
+          <fieldType>String</fieldType>
+          <operator>in</operator>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -153,7 +201,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Favorite Food 1</valueString>
+        <valueString>Favorite food 1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -164,6 +212,21 @@
       </value>
       <value>
         <valueString>CHILI DOG, FRIES, CHEESEBURGER</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -186,7 +249,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Normal Cars</valueString>
+        <valueString>Favorite food 2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -201,12 +264,315 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Favorite food 2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>-2</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SHAWSHANK REDEMPTION, THE USUAL SUSPECTS, STAR WARS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>THE NOTEBOOK</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">5</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SOCCER, HOCKEY, FOOTBALL, BASEBALL</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">6</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>CRICKET, RUGBY</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">7</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>YANKEES, RED SOX</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">8</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
